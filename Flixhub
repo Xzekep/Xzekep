@@ -1,0 +1,255 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe",  	
+
+Text = "Chris?",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Flix hub", "Synapse")
+
+-- Tabs 
+
+local Tab1 = Window:NewTab("Home")
+
+local Tab1Section = Tab1:NewSection("Welcome User")
+
+local Tab1Section = Tab1:NewSection("Discord ChrisIdk?#7667")
+
+local Tab1Section = Tab1:NewSection("Sub to Chris?")
+
+-- Tabs
+
+local Tab2 = Window:NewTab("Player")
+
+local Tab2Section = Tab2:NewSection("Player")
+
+-- Buttons/Windows/Scripts
+
+Tab2Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+end)
+
+Tab2Section:NewToggle("Fov", "Changes Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Tab2Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+
+end)
+
+-- Tabs
+
+local Tab3 = Window:NewTab("Games hub")
+
+local Tab3Section = Tab3:NewSection("Games hub")
+
+-- Buttons
+
+Tab3Section:NewButton("pianov3", "Character Gamepass", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/AutoPianoV3LoL/main/AutoPianoV3Updated.lua", true))()
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Be a parkour ninja", "Character Gamepass", function()
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+local vu = game:GetService("VirtualUser")
+
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+    wait(1)
+
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+end)
+
+ 
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Subscribe To JN HH Gaming";
+
+    Text = "Made by JN HH Gaming"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+wait(1)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Have Fun Killing";
+
+    Text = "Enjoy"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+_G.HeadSize = 20
+
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end)
+
+end)
+
+-- Buttoms
+
+Tab3Section:NewButton("Evade", "Troll", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+
+end)
+
+-- Buttoms
+
+Tab3Section:NewButton("Brookhaven", "ice hub", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+
+end)
+
+-- Tabs
+
+local Tab4 = Window:NewTab("Hub")
+
+local Tab4Section = Tab4:NewSection("Hub")
+
+-- Buttoms 
+
+Tab4Section:NewButton("pendulum hub", "idk for?", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+
+end)
+
+-- Buttoms
+
+Tab4Section:NewButton("Animation hub", "idk for?", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+
+end)
+
+-- Buttoms
+
+Tab4Section:NewButton("Darkrai hub", "made by Gamingscripter", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/gaming_hub/main/Gaming%20Hub", true))()
+
+end)
+
+-- Tabs 
+
+local Tab5 = Window:NewTab("script")
+
+local Tab5Section = Tab5:NewSection("script")
+
+-- Buttons
+
+Tab5Section:NewButton("Keyboard script", "need for any keybind", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+end)
+
+-- Tabs
+
+local Tab6 = Window:NewTab("Update")
+
+local Tab6Section = Tab6:NewSection("Added Script")
+
+-- Tabs
+
+local Tab7 = Window:NewTab("Read this")
+
+local Tab7Section = Tab7:NewSection("Dm me if u want me to add more script")
