@@ -248,7 +248,7 @@ local Tab6 = Window:NewTab("fe script")
 
 local Tab6Section = Tab6:NewSection("fe script")
 
-Section:NewButton("Fe hub", "made by Chris", function()
+Tab6Section:NewButton("Fe hub", "made by Chris", function()
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Fe%20hub"))()
 
