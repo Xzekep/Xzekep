@@ -272,11 +272,23 @@ Tab6Section:NewButton("Vr (netless needed)", "netless", function()
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Vr"))()
 
+end)
+
+-- Buttons
+
+Tab6Section:NewButton("fe gf with bike hats needed", "with bike", function()
+
+    -- controls :
+
+-- press E to ride/toggle
+
+-- press Q to ride with girl/toggle
+
+loadstring(game:HttpGet(('https://pastefy.ga/6SiK0qV3/raw'),true))()
+
     
 
 end)
-
-    
 
 -- Tabs
 
@@ -309,3 +321,7 @@ local Tab6Section = Tab6:NewSection("ChrisIdk?#7667")
 local Tab7 = Window:NewTab("Read this")
 
 local Tab7Section = Tab7:NewSection("Dm me if u want me to add more script")
+
+
+
+
