@@ -1,0 +1,287 @@
+setclipboard("https://m.youtube.com/channel/UCPhDEWo5gPaODhuj1Z1R0Gw")
+
+print("Game Console")
+
+if game.PlaceId == 155615604 then
+
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+             local Window = Library.CreateLib("Fe Prison Life Script V4", "Serpent")
+
+            local Credits = Window:NewTab("Main")
+
+            local CreditsSection = Credits:NewSection("Credits")
+
+            CreditsSection:NewLabel("Scripts Creator By: ajdjdujdjdjdjsjicjf")
+
+            CreditsSection:NewLabel("Fixed SCRIPT (Newest Script)")
+
+            CreditsSection:NewLabel("Fe Prison Life Remastered")
+
+    local Tab = Window:NewTab("Ui")
+
+    local UiSection = Tab:NewSection("Toggle")
+
+    UiSection:NewKeybind("Toggle Ui", "this will hide the ui(does not inculde animation)", Enum.KeyCode.RightControl, function()
+
+        Library:ToggleUI()
+
+    end)
+
+    local Tab = Window:NewTab("LocalPlayer")
+
+    local LocalPlayerSection = Tab:NewSection("Movement")
+
+   LocalPlayerSection:NewSlider("Walkspeed", "if you sprint, you have to adjust again", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+    end)
+
+ LocalPlayerSection:NewSlider("JumpPower", "Turns you into a pogostick.", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+    end)                              
+
+                                                                                                                                   
+
+    
+
+    local Tab = Window:NewTab("Combat")
+
+    local CombatSection = Tab:NewSection("Combat")
+
+    CombatSection:NewButton("Become an Hacking For Weapons!", "M4A1 Not inculded.", function()
+
+                print("All Weapons Given!")
+
+                workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+
+                workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver.M9.ITEMPICKUP)
+
+                workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP)
+
+                workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+
+        print(currentOption)
+
+    end)
+
+    CombatSection:NewButton("HitboxExpander", "Hitbox Ui", function()
+
+        loadstring(game:HttpGet(("https://gameovers.net/Scripts/Free/HitboxExpander/main.lua"),true))()
+
+    end)
+
+            local Misc = Window:NewTab("Removes")
+
+            local MiscSection = Misc:NewSection("Removes")
+
+            MiscSection:NewButton("Remove all Doors", "Removes Everything Doors!", function()
+
+                for i,d in pairs(game.Workspace.Doors:GetChildren()) do
+
+                    if d.ClassName == "Model" then
+
+                        d:Destroy()
+
+                    end
+
+                end
+
+            end)
+
+            MiscSection:NewButton("Remove All Fences", "All Fences Will Be Deleted!", function()
+
+                for i,l in pairs(game.Workspace["Prison_Fences"]:GetChildren()) do
+
+                    if l.Name == "fence" then
+
+                        l:Destroy()
+
+                    end
+
+                end
+
+            end)
+
+        
+
+            MiscSection:NewButton("Remove All Gates", "All Gates Will Be Deleted!", function()
+
+                game.Workspace["Prison_Fences"]["Prison_Gate"]:Destroy()
+
+                game.Workspace["Prison_Fences"]["gate"]:Destroy()
+
+            end)
+
+        
+
+    
+
+    local Tab = Window:NewTab("Scripts and Gui")
+
+    local AdminSection = Tab:NewSection("Scripts")
+
+    AdminSection:NewButton("Septex (Loop Avatar, Tools", "Gives You Cmds!!", function()
+
+                loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+
+            end)
+
+            AdminSection:NewButton("PrisonBreaker V1.5", "PrisonBreaker Gui new", function()
+
+                loadstring(game:HttpGet(('https://pastebin.com/raw/QcNge4QY'),true))()
+
+            end)
+
+             AdminSection:NewButton("Inf Yield", "Give for you more cmds!", function()
+
+                loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+            end)
+
+            local AdminSection = Tab:NewSection("Septex Commands")
+
+        AdminSection:NewLabel(":rank <plr> - gives player commands")
+
+            AdminSection:NewLabel(":kill <plr> - kill player")
+
+            AdminSection:NewLabel(":sa <plr> - spam arrest player")
+
+            AdminSection:NewLabel(":crim <plr> - makes player criminal")
+
+            AdminSection:NewLabel(":bring <plr> - brings player")
+
+            AdminSection:NewLabel(":goto <plr> - makes you go to player")
+
+            AdminSection:NewLabel(":void <plr> - voids player")
+
+            AdminSection:NewLabel(":key <plr> - gives player keycard")
+
+            AdminSection:NewLabel(":cuffs <plr> - gives player handcuffs")
+
+            AdminSection:NewLabel(":trap <plr> - traps player")
+
+            AdminSection:NewLabel(":yard <plr> - brings player to yard")
+
+            AdminSection:NewLabel(":base <plr> - brings player to criminal base")
+
+            AdminSection:NewLabel(":prison <plr> - brings player to prison")
+
+            AdminSection:NewLabel(":lk <plr> - loopkills player")
+
+            AdminSection:NewLabel(":aura <plr> - gives player kill aura")
+
+            AdminSection:NewLabel(":virus <plr> - makes anyone who touch player dies")
+
+            AdminSection:NewLabel(":oof <plr> - humanoid on touch kill players")
+
+            AdminSection:NewLabel(":spike - lag spike")
+
+            AdminSection:NewLabel(":bspike - big lag spike")
+
+            AdminSection:NewLabel(":lag <server> - lags the server")
+
+            AdminSection:NewLabel(":crash <server> - crashes the server")
+
+            AdminSection:NewLabel(":tk <plr> - teleport you to player and kills them")
+
+            AdminSection:NewLabel(":ltk <plr> - loops tpkill")
+
+            AdminSection:NewLabel(":logs <script> - prints all used cmds")
+
+            local Tab = Window:NewTab("Troll")
+
+            local TrollSection = Tab:NewSection("FLY")
+
+            TrollSection:NewButton("Flycar (AirWav)", "superman but car", function()
+
+                loadstring(game:HttpGet(('https://pastebin.com/raw/VLBwAgwT'),true))()
+
+            end)
+
+    
+
+            local TrollSection = Tab:NewSection("Dances")
+
+            TrollSection:NewButton("NullWare V3", "i went through links for you", function()
+
+                loadstring(game:HttpGet(('loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()') ,true))()
+
+            end)
+
+    local Tab = Window:NewTab("Teleportings")
+
+    local TeleportsSection = Tab:NewSection("be even faster than flash")
+
+    TeleportsSection:NewButton("Outside of prison", "Teleports You outside of the prison!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(451.6684265136719, 98.0399169921875, 2216.338134765625)
+
+            end)
+
+            TeleportsSection:NewButton("Prison Yard", "Teleports You to the Prison Yard", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(736.4671630859375, 97.99992370605469, 2517.583740234375)
+
+            end)
+
+            TeleportsSection:NewButton("Kitchen", "Teleports for You to the Kitchen!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(906.641845703125, 99.98993682861328, 2237.67333984375)
+
+            end)
+
+            TeleportsSection:NewButton("Prison Cells", "Teleports for You to the Prison Cells!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(919.5551147460938, 99.98998260498047, 2441.700927734375)
+
+            end)
+
+            TeleportsSection:NewButton("Surveilance Room", "Teleports for You to the Surveilance Room!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(795.251953125, 99.98998260498047, 2327.720703125)
+
+            end)
+
+            TeleportsSection:NewButton("Break Room", "Teleports for You to the Break Room!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(800.0896606445312, 99.98998260498047, 2266.71630859375)
+
+            end)
+
+            TeleportsSection:NewButton("Police Armory", "Teleports for You to the Police Armory!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(837.2889404296875, 99.98998260498047, 2270.99658203125)
+
+            end)
+
+            TeleportsSection:NewButton("Police Room", "Teleports for You to the Police Room", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(836.5386352539062, 99.98998260498047, 2320.604248046875)
+
+            end)
+
+            TeleportsSection:NewButton("Cafeteria", "Teleports for You to the Cafeteria!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(918.994873046875, 99.98993682861328, 2325.73095703125)
+
+            end)
+
+            TeleportsSection:NewButton("Criminal Base Inside", "Teleports for You to the Criminal Base Inside!", function()
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-975.8451538085938, 109.32379150390625, 2053.11376953125)
+
+    end)
+
+    
+
+    coroutine.wrap(UVUZD_fake_script)()
+
+game.Player.LocalPlayer:kick("Bro have hacker, do not report me and kill me or kicked💀💀💀")
+
+    else
+
+end
