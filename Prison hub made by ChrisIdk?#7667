@@ -1,0 +1,183 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe",  	
+
+Text = "ChrisTheScripter",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Prison hub made by ChrisIdk?#7667", "DarkTheme")
+
+-- Tabs 
+
+local Tab1 = Window:NewTab("Home")
+
+local Tab1Section = Tab1:NewSection("Welcome User")
+
+local Tab1Section = Tab1:NewSection("Discord ChrisIdk?#7667")
+
+local Tab1Section = Tab1:NewSection("Sub to ChrisTheScripter")
+
+-- Tabs
+
+local Tab2 = Window:NewTab("Player")
+
+local Tab2Section = Tab2:NewSection("Player")
+
+-- Buttons/Windows/Scripts
+
+Tab2Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+end)
+
+Tab2Section:NewToggle("Fov", "Changes Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Tab2Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+
+end)
+
+-- Tabs
+
+local Tab3 = Window:NewTab("Prison life")
+
+local Tab3Section = Tab3:NewSection("⬇️")
+
+-- Buttons
+
+Tab3Section:NewButton("Aware", "Prison life", function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Prison life gui", "Gui", function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Prison%20lifef"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Prison Gui", "best Gui", function()
+
+       loadstring(game:HttpGet("https://pastebin.com/raw/dJ6tcE7h", true))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Prison Ruiner", "Made by Chris", function()
+
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Prison%20life%20Ruiner%20made%20by%20Chris"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("prevail prison life", "idk", function()
+
+    --[[
+
+    88""Yb  88""Yb  888888 Yb    dP    db     88  88      Yb  dP
+
+    88__dP  88__dP  88__    Yb  dP    dPYb    88  88       YbdP 
+
+    88"""   88"Yb   88""     YbdP    dP__Yb   88  88  .o   dPYb 
+
+    88      88  Yb  888888    YP    dP""""Yb  88  88ood8  dP  Yb  ~02hacks
+
+]]
+
+loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+
+end)
+
+-- Tabs
+
+local Tab4 = Window:NewTab("Aimbot")
+
+local Tab4Section = Tab4: NewSection ("Aimbot")
+
+-- Buttons
+
+Tab4Section:NewButton("Aimbot", "Aimbot", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Prison%20life%20aim%20bot"))()
+
+    
+
+end)
+
+-- Tabs
+
+local Tab5 = Window:NewTab("who make the script?")
+
+local Tab5Section = Tab5:NewSection("ChrisIdk?#7667")
+
+-- Tabs
+
+local Tab6 = Window:NewTab("Admin commands")
+
+local Tab6Section = Tab6:NewSection("⬇️script⬇️")
+
+-- Buttons
+
+Tab6Section:NewButton("Admin script", "Type /console to see the commands", function()
+
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+
+    
+
+end)
