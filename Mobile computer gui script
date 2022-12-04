@@ -1,0 +1,107 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe",  	
+
+Text = "ChrisTheScripter",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Mobile computer Made by ChrisIdk?#7667", "DarkTheme")
+
+-- Tabs 
+
+local Tab1 = Window:NewTab("Home")
+
+local Tab1Section = Tab1:NewSection("Welcome User")
+
+local Tab1Section = Tab1:NewSection("Discord ChrisIdk?#7667")
+
+local Tab1Section = Tab1:NewSection("Sub to ChrisTheScripter")
+
+-- Tabs
+
+local Tab2 = Window:NewTab("Player")
+
+local Tab2Section = Tab2:NewSection("Player")
+
+-- Buttons/Windows/Scripts
+
+Tab2Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+end)
+
+Tab2Section:NewToggle("Fov", "Changes Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Tab2Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+
+end)
+
+-- Tabs
+
+local Tab3 = Window:NewTab("Mobile computer script")
+
+local Tab3Section = Tab3:NewSection("Mobile computer script")
+
+-- Buttons 
+
+Tab3Section:NewButton("Keyboard", "keyboard script", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+  
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Cursor", "cursor bruh", function()
+
+    loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
+
+    
+
+end)
