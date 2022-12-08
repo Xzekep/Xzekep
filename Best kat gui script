@@ -1,0 +1,541 @@
+_, Protected_by_MoonSecV2, Discord = 'discord.gg/JjdJ6AXA'
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe to",  	
+
+Text = "ChrisTheScripter",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Kat  Made by ChrisIdk?#7667", "DarkTheme")
+
+-- Tabs 
+
+local Tab1 = Window:NewTab("Home")
+
+local Tab1Section = Tab1:NewSection("Welcome User")
+
+local Tab1Section = Tab1:NewSection("Discord ChrisIdk?#7667")
+
+local Tab1Section = Tab1:NewSection("Sub to ChrisTheScripter")
+
+-- Tabs
+
+local Tab2 = Window:NewTab("Player")
+
+local Tab2Section = Tab2:NewSection("Player")
+
+-- Buttons/Windows/Scripts
+
+Tab2Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+end)
+
+Tab2Section:NewToggle("Fov", "Changes Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Tab2Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+
+end)
+
+-- Tabs
+
+local Tab3 = Window:NewTab("Kat Gui")
+
+local Tab3Section = Tab3:NewSection("Kat Gui")
+
+-- Buttons
+
+Tab3Section:NewButton("Kat gui", "Gui", function()
+
+    loadstring(game:HttpGet('https://pastebin.com/raw/TDBuxW7W'))()
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Kat Jn hh", "made by Jn Hh gaming", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Owl hub kat", "Owl hub kat script", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Darkrai Kat", "Made by Gamingscripter", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/KAT"))()
+
+end)
+
+-- Tabs
+
+local Tab4 = Window:NewTab("Kat script")
+
+local Tab4Section = Tab4:NewSection ("Kat script")
+
+-- Buttons
+
+Tab4Section:NewButton("Free boombox", "Script", function()
+
+    local UI = game:GetObjects("rbxassetid://7118181510")[1]
+
+if syn and syn.protect_gui then
+
+   syn.protect_gui(UI)
+
+end
+
+UI.Parent = game:GetService("CoreGui")
+
+wait()
+
+UI.Main.Text.Text = "Custom Radio Gui By Kaid#0001\n\nJoin discord.gg/hatsune"
+
+--Drag Script
+
+local a=game:GetService("UserInputService")local b=UI.Main;local c;local d;local e;local f;local function g(h)local i=h.Position-e;b.Position=UDim2.new(f.X.Scale,f.X.Offset+i.X,f.Y.Scale,f.Y.Offset+i.Y)end;b.InputBegan:Connect(function(h)if h.UserInputType==Enum.UserInputType.MouseButton1 then c=true;e=h.Position;f=b.Position;h.Changed:Connect(function()if h.UserInputState==Enum.UserInputState.End then c=false end end)end end)b.InputChanged:Connect(function(h)if h.UserInputType==Enum.UserInputType.MouseMovement then d=h end end)a.InputChanged:Connect(function(h)if h==d and c then g(h)end end)
+
+--Close Button
+
+UI.Main.CloseGui.MouseButton1Down:Connect(function()
+
+   UI.Main.Visible = false
+
+   UI.OpenButton.Position = UI.Main.Position
+
+   UI.OpenButton.Visible = true
+
+end)
+
+--Open Button
+
+UI.OpenButton.OpenGui.MouseButton1Down:Connect(function()
+
+   UI.Main.Visible = true
+
+   UI.OpenButton.Visible = false
+
+end)
+
+--Play Button
+
+UI.Main.Play.MouseButton1Down:Connect(function()
+
+   game:GetService("ReplicatedStorage").GameEvents.Gameplay.PlayRadio:FireServer({tonumber(UI.Main.Input.Text),1})
+
+end)
+
+    
+
+end)
+
+-- Buttons
+
+Tab4Section:NewButton("Kat script Jn hh gaming", "Made by Jn Hh gaming", function()
+
+    game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Enjoy";
+
+    Text = "Made by JN HH Gaming"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+wait(1)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Subscribe To Him";
+
+    Text = "Now!"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+-- Gui to Lua
+
+-- Version: 3.
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local Main = Instance.new("Frame")
+
+local TextLabel = Instance.new("TextLabel")
+
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+
+Main.Parent = ScreenGui
+
+Main.BackgroundColor3 = Color3.fromRGB(39, 15, 245)
+
+Main.Position = UDim2.new(0.363293529, 0, 0.28638497, 0)
+
+Main.Size = UDim2.new(0, 300, 0, 154)
+
+Main.Style = Enum.FrameStyle.ChatRed
+
+TextLabel.Parent = Main
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+
+TextLabel.BackgroundTransparency = 1.000
+
+TextLabel.Position = UDim2.new(-0.025588274, 0, -0.0890700519, 0)
+
+TextLabel.Size = UDim2.new(0, 250, 0, 30)
+
+TextLabel.Font = Enum.Font.SciFi
+
+TextLabel.Text = "JN HH Gaming Speed"
+
+TextLabel.TextColor3 = Color3.fromRGB(245, 16, 16)
+
+TextLabel.TextScaled = true
+
+TextLabel.TextSize = 12.000
+
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Main
+
+TextButton.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+
+TextButton.Position = UDim2.new(0.136470661, 0, 0.458670378, 0)
+
+TextButton.Size = UDim2.new(0, 200, 0, 58)
+
+TextButton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+
+TextButton.Font = Enum.Font.SciFi
+
+TextButton.Text = "Click To Activate"
+
+TextButton.TextColor3 = Color3.fromRGB(21, 235, 78)
+
+TextButton.TextScaled = true
+
+TextButton.TextSize = 14.000
+
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Down:connect(function()
+
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60 end
+
+Walkspeed()
+
+end)
+
+-- Scripts:
+
+local function LASGYB_fake_script() -- ScreenGui.Script 
+
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Main -- Take out {}s, and put name of frame
+
+	frame.Draggable = true
+
+	frame.Active = true
+
+	frame.Selectable = true
+
+end
+
+coroutine.wrap(LASGYB_fake_script)()
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+shared.enabled = w
+
+game:GetService("RunService").heartbeat:connect(function()
+
+if not shared.enabled then return end
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer(workspace.Map.Blocks,1645488277.345853)
+
+wait()
+
+end)
+
+-- FE Invisible
+
+Local = game:GetService('Players').LocalPlayer
+
+Char  = Local.Character
+
+touched,tpdback = false, false
+
+Local.CharacterAdded:connect(function(char)
+
+    if script.Disabled ~= true then
+
+        wait(.25)
+
+        loc = Char.HumanoidRootPart.Position
+
+        Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+
+    end
+
+end)
+
+game:GetService('UserInputService').InputBegan:connect(function(key)
+
+    if key.KeyCode == Enum.KeyCode.Equals then
+
+        if script.Disabled ~= true then
+
+            script.Disabled = true
+
+            print'you may re-execute'
+
+        end
+
+    end
+
+end)
+
+box = Instance.new('Part',workspace)
+
+box.Anchored = true
+
+box.CanCollide = true
+
+box.Size = Vector3.new(10,1,10)
+
+box.Position = Vector3.new(0,10000,0)
+
+box.Touched:connect(function(part)
+
+    if (part.Parent.Name == Local.Name) then
+
+        if touched == false then
+
+            touched = true
+
+            function apply()
+
+                if script.Disabled ~= true then
+
+                    no = Char.HumanoidRootPart:Clone()
+
+                    wait(.25)
+
+                    Char.HumanoidRootPart:Destroy()
+
+                    no.Parent = Char
+
+                    Char:MoveTo(loc)
+
+                    touched = false
+
+                end end
+
+            if Char then
+
+                apply()
+
+            end
+
+        end
+
+    end
+
+end)
+
+repeat wait() until Char
+
+loc = Char.HumanoidRootPart.Position
+
+Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+
+local Camera = game:GetService("Workspace").CurrentCamera
+
+local Players = game:GetService("Players")
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local function GetClosestPlayer()
+
+   local ClosestPlayer = nil
+
+   local FarthestDistance = math.huge
+
+   for i, v in pairs(Players.GetPlayers(Players)) do
+
+       if v ~= LocalPlayer and v.Character and v.Character.FindFirstChild(v.Character, "HumanoidRootPart") then
+
+           local DistanceFromPlayer = (LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
+
+           if DistanceFromPlayer < FarthestDistance then
+
+               FarthestDistance = DistanceFromPlayer
+
+               ClosestPlayer = v
+
+           end
+
+       end
+
+   end
+
+   if ClosestPlayer then
+
+       return ClosestPlayer
+
+   end
+
+end
+
+local Camera = game:GetService("Workspace").CurrentCamera
+
+local Players = game:GetService("Players")
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local function GetClosestPlayer()
+
+   local ClosestPlayer = nil
+
+   local FarthestDistance = math.huge
+
+   for i, v in pairs(Players.GetPlayers(Players)) do
+
+       if v ~= LocalPlayer and v.Character and v.Character.FindFirstChild(v.Character, "HumanoidRootPart") then
+
+           local DistanceFromPlayer = (LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
+
+           if DistanceFromPlayer < FarthestDistance then
+
+               FarthestDistance = DistanceFromPlayer
+
+               ClosestPlayer = v
+
+           end
+
+       end
+
+   end
+
+   if ClosestPlayer then
+
+       return ClosestPlayer
+
+   end
+
+end
+
+local GameMetaTable = getrawmetatable(game)
+
+local OldGameMetaTableNamecall = GameMetaTable.__namecall
+
+setreadonly(GameMetaTable, false)
+
+GameMetaTable.__namecall = newcclosure(function(object, ...)
+
+   local NamecallMethod = getnamecallmethod()
+
+   local Arguments = {...}
+
+   if tostring(NamecallMethod) == "FindPartOnRayWithIgnoreList" then
+
+       local ClosestPlayer = GetClosestPlayer()
+
+       
+
+       if ClosestPlayer and ClosestPlayer.Character then
+
+           Arguments[1] = Ray.new(Camera.CFrame.Position, (ClosestPlayer.Character.Head.Position - Camera.CFrame.Position).Unit * (Camera.CFrame.Position - ClosestPlayer.Character.Head.Position).Magnitude)
+
+       end
+
+   end
+
+   return OldGameMetaTableNamecall(object, unpack(Arguments))
+
+end)
+
+setreadonly(GameMetaTable, true)
+
+    
+
+end)
