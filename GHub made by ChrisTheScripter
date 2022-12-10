@@ -1,0 +1,323 @@
+_, Protected_by_MoonSecV2, Discord = 'discord.gg/JjdJ6AXA'
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe to",  	
+
+Text = "ChrisTheScripter",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("GHUB  Made by ChrisIdk?#7667", "Ocean")
+
+-- Tabs 
+
+local Tab1 = Window:NewTab("Home")
+
+local Tab1Section = Tab1:NewSection("Welcome User")
+
+local Tab1Section = Tab1:NewSection("Discord ChrisIdk?#7667")
+
+local Tab1Section = Tab1:NewSection("Sub to ChrisTheScripter")
+
+-- Tabs
+
+local Tab2 = Window:NewTab("Popular games")
+
+local Tab2Section= Tab2:NewSection("Popular Games")
+
+--- Buttons
+
+Tab2Section:NewButton("Combat warrior", "Loading...", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ufouzzed/COmbat/main/WithVC"))()
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Da hood", "Have fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("(🛏️)Bedwars", "Enjoy!!", function()
+
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/1016359889246879802/1039822473933373510/Protected.lua",true))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("🚪 Doors🚪", "Sub", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/CometRestoration/main/Main.lua"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("BloxFruit", "Loaded..", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("🍜Shindo life🍜", "Top Games", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/XDima2/main/RaumHub"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("🖐️Slap Battle🖐️", "Top games", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Kat", "Top games", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/KAT"))()
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Arsenal", "Top games", function()
+
+     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Brookhaven🏡", "Top games", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Funky friday", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab2Section:NewButton("Ninja legends", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+
+    
+
+end)
+
+local Tab2Section = Tab2:NewSection("more soon")
+
+-- Tabs
+
+local Tab3 = Window:NewTab("Other Games")
+
+local Tab3Section = Tab3:NewSection("👇Games👇")
+
+-- Buttons
+
+Tab3Section:NewButton("Evade", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Bee swarm", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet('https://s.kometa.ga/kometa.lua'))()
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Paint Ball", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+
+    
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Clicker simulator", "Loaded have Fun!", function()
+
+    local plr = game:GetService("Players").LocalPlayer
+
+local clientEvents = game:GetService("ReplicatedStorage").Bindable.Client
+
+local boosts = plr.Boosts
+
+boosts.DoubleClicks.isActive.Value = true
+
+boosts.AutoClick.isActive.Value = true
+
+clientEvents.slowAutoClickerToggle:Fire(true);
+
+clientEvents.autoClickerToggle:Fire(true);
+
+while true do
+
+    task.wait()
+
+    getrenv()._G.zoneMultiplier = (9e99) * 1000000
+
+end
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Anime Clicker simulator", "Loaded have Fun!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/DisticHub/main/Loader.lua"))()
+
+end)
+
+-- Buttons
+
+Tab3Section:NewButton("Be a parkour ninja", "Character Gamepass", function()
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then
+
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+local vu = game:GetService("VirtualUser")
+
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+    wait(1)
+
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+end)
+
+ 
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Subscribe To JN HH Gaming";
+
+    Text = "Made by JN HH Gaming"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+wait(1)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Have Fun Killing";
+
+    Text = "Enjoy"; -- what the text says (ofc)
+
+    Duration = 60;
+
+})
+
+_G.HeadSize = 20
+
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end)
+
+end)
