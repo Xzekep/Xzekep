@@ -1,0 +1,605 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Subcribe To",  	
+
+Text = "ChrisTheScripter",
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "wait...",  	
+
+Text = "loading...",
+
+})
+
+wait()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+
+Title = "loaded!",  	
+
+Text = "Have fun!",
+
+})
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Auto Piano v1 | ChrisTheScripter", "BloodTheme")
+
+-- Tabs
+
+local Tab = Window:NewTab("Welcome User")
+
+local Section = Tab:NewSection("Welcome")
+
+local Section = Tab:NewSection("Sub to ChrisTheScripter")
+
+local Section = Tab:NewSection("Enjoy!!")
+
+Section:NewLabel("Subscribe")
+
+-- Tabs
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Auto piano")
+
+Section:NewButton("Super Idol", "Autoplayf", function()
+
+   -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 20 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[       d       d       D       d       s       d    [o(]   [sYE] 
+
+   [P(]       o       (   [YPE]       (    [sq]   [tsi]    [sq] 
+
+      d    [sq]   [tiP]    [sq]    [d9]   [yeP]    [o9]       o 
+
+   [P9]   [yoe]    [P9]    [wo]   [yod]    [wd]       D    [wd] 
+
+  [yso]    [wP]    [d(]       s    [YE]    [d(]       o       ( 
+
+  [oYE]    [P(]    [qp]   [tpi]    [qp]       d       q   [tid] 
+
+      q    [^P]       q       E       Y       y       i       p 
+
+      d       c       ^       i   [g@(]   [dYE]    [s(]       P 
+
+   [s(]   [dYE]    [P(] [sqpi4]    [te]    [qi]       o    [qi] 
+
+  [ute]    [qi]   [d92]  [yqed]    [s9]       d       9  [yqoe] 
+
+      9   [wi5]    [yE]       w       w   [yiE]       w   [g@(] 
+
+  [dYE]    [s(]       P    [s(]   [dYE]    [P(]   [sq4]    [te] 
+
+   [qi]       o    [qi]   [ute]    [qi]    [d^]   [qdE]    [^S] 
+
+      d       ^    [JE]       q    [j^]       e    [qg]       9 
+
+   [o^]       9    [p4]       ^    [P@]   [wP(]    [p^]       P 
+
+      ^    [d(]       @ [sqpi4]   [tse]    [qP]       s       q 
+
+  [tpe]       q  [iP92]  [yqeP]    [p9]       P       9  [yqie] 
+
+      9   [wo5]    [yE]       w       w   [yoE]    [wp]  [YP@(] 
+
+  [YPE]    [p(]       P       (   [dYE]       (   [sq4]       s 
+
+  [tse]    [qP]       s    [qP]   [tpe]    [sq]    [^P]       q 
+
+      E       t       y       i       p       s       j       l 
+
+      z       c       b       d       d       D       d    [s^] 
+
+      d   [o@(]   [sYE]    [P(]       o       (   [YPE]       ( 
+
+  [sq4]   [tse]    [sq]       d    [sq]   [teP]    [sq]   [d92] 
+
+ [yqeP]    [o9]       o    [P9]  [yqoe]    [P9]   [wo5]   [ydE] 
+
+   [wd]       D    [wd]   [ysE]    [wP]   [d@(]       s    [YE] 
+
+   [d(]       o       (   [oYE]    [P(]   [qp4]   [tpe]    [qp] 
+
+      d       q   [ted]       q    [^P]    [qE]       y    [i^] 
+
+      p       y       i    [p^]       d   [qiE]       P    [d^] 
+
+      g   [^PJ]   [qdE]    [d^]       D    [d^]   [sqE]    [d^] 
+
+  [o@(]   [sYE]    [P(]       o       ^    [P(]       @  [sqi4] 
+
+  [tse]    [sq]       d    [s8]    [qP]    [s4] [pid92]  [yqeP] 
+
+   [o9]       o    [P6]    [o9]    [P2]   [wo5]   [ydE]    [wd] 
+
+      D    [d9]    [ws]    [P5]  [id@(]       s    [YE]    [d(] 
+
+      o       ^    [o(]    [P@]  [qpi4]   [tpe]    [qp]       d 
+
+      8    [qd]       4  [yi^P]   [qPE]       ^       J       ^ 
+
+  [qPE]       ^    [^J]   [qgE]    [d^]       g    [d^]   [sqE] 
+
+   [^P]   [o@(]   [sYE]    [P(]       o       ^    [P(]       @ 
+
+ [sqi4]   [tse]    [sq]       d    [s8]    [qP]    [s4] [pid92] 
+
+ [yqeP]    [o9]       o    [P6]    [o9]    [P2]   [wo5]   [ydE] 
+
+   [wd]       D    [d9]    [ws]    [P5]  [id@(]       s    [YE] 
+
+   [d(]       o       ^    [o(]    [P@]   [qp4]   [tpe]    [qp] 
+
+      d       8    [qd]       4  [yi^P]   [qPE]       ^       J 
+
+      ^   [qPE]       ^    [^J]   [qPE]       ^       J       ^ 
+
+  [qPE]       ^    [P@]       D       J       ^       (       q 
+
+      w    [h(]       ^    [p4]       s       g       8       q 
+
+   [wh]    [ed]    [sq]    [P4]    [92]  [yqeP]       9       J 
+
+      9  [yqeP]   [wJ5]   [yPE]       w       J       9    [wP] 
+
+      5    [P@]       D       J       ^       (       q       w 
+
+   [h(]       ^    [p4]       s       g       8       q    [wh] 
+
+   [ed]    [sq]    [P4]       ^       P       J       P       J 
+
+  [q^E]   [q^E]   [q^E]   [q^E]       P       o       h   [yE(] 
+
+      d       s       P  [ysE(]  [ydE(]       P       s   [tqe] 
+
+  [tqe]       i       o  [tqie]       u  [tqie]       d   [tqe] 
+
+ [tqed]       s       d   [tqe]       o   [tqe]       i   [ywE] 
+
+  [ywE]       w   [yiE]       w    [g(]   [ydE]    [s(]       P 
+
+   [s(]   [ydE]    [P(]    [sq]    [te]    [qi]       o    [qi] 
+
+  [ute]    [qi]    [d^]   [qdE]    [^S]       d       ^    [JE] 
+
+      q    [j^]       e    [qg]       9    [o^]       9    [p4] 
+
+      ^   [YP@]   [wP(]    [p^]       P       ^    [d(]       @ 
+
+[sqpi4]   [tse]    [qP]       s       8    [qp]       4 [yiP92] 
+
+ [yqeP]    [p9]       P       6    [i9]       2  [ywo5]    [yE] 
+
+      w       9    [wo]    [p5]  [YP@(]   [wP(]    [p8]       P 
+
+      ^    [d(]       @ [sqpi4]       s   [tse]    [qP]       g 
+
+   [P8]    [qp]    [s4]   [yiP]       ^       ^       ^    [y^] 
+
+      u       i       o       p       a       s       ^       d 
+
+      f       g       h       j       k       l       ^       z 
+
+      x       c       v       b       n       l       ^       z 
+
+      x       c       v       b       n    [l^]       d       d 
+
+      D       d    [s^]       d   [o@(]   [sYE]    [P(]       o 
+
+      (   [YPE]       (   [sq4]   [tse]    [sq]       d    [sq] 
+
+  [teP]    [sq]   [d92]  [yqeP]    [o9]       o    [P9]  [yqoe] 
+
+   [P9]   [wo5]   [ydE]    [wd]       D    [wd]   [ysE]    [wP] 
+
+  [d@(]       s    [YE]    [d(]       o       (   [oYE]    [P(] 
+
+  [qp4]   [tpe]    [qp]       d       q   [ted]       q    [^P] 
+
+   [qE]       y    [i^]       p       y       i    [p^]       d 
+
+  [qiE]       P    [d^]       g   [^PJ]   [qdE]    [d^]       D 
+
+   [d^]   [sqE]    [d^]   [o@(]   [sYE]    [P(]       o       ^ 
+
+   [P(]       @  [sqi4]   [tse]    [sq]       d    [s8]    [qP] 
+
+   [s4] [pid92]  [yqeP]    [o9]       o    [P6]    [o9]    [P2] 
+
+  [wo5]   [ydE]    [wd]       D    [d9]    [ws]    [P5]  [id@(] 
+
+      s    [YE]    [d(]       o       ^    [o(]    [P@]  [qpi4] 
+
+  [tpe]    [qp]       d       8    [qd]       4  [yi^P]   [qPE] 
+
+      ^       J       ^   [qPE]       ^    [^J]   [qgE]    [d^] 
+
+      g    [d^]   [sqE]    [^P]   [o@(]   [sYE]    [P(]       o 
+
+      ^    [P(]       @  [sqi4]   [tse]    [sq]       d    [s8] 
+
+   [qP]    [s4] [pid92]  [yqeP]    [o9]       o    [P6]    [o9] 
+
+   [P2]   [wo5]   [ydE]    [wd]       D    [d9]    [ws]    [P5] 
+
+ [id@(]       s    [YE]    [d(]       o       ^    [o(]    [P@] 
+
+  [qp4]   [tpe]    [qp]       d       8    [qd]       4  [yi^P] 
+
+  [qPE]       ^       J       ^   [qPE]       ^    [^J]   [qPE] 
+
+      ^       J       ^   [qPE]       ^    [P@]       D       J 
+
+      ^       (       q       w    [h(]       ^    [p4]       s 
+
+      g       8       q    [wh]    [ed]    [sq]    [P4]    [92] 
+
+ [yqeP]       9       J       9  [yqeP]   [wJ5]   [yPE]       w 
+
+      J       9    [wP]       5    [P@]       D       J       ^ 
+
+      (       q       w    [h(]       ^    [p4]       s       g 
+
+      8       q    [wh]    [ed]    [sq]    [P4]       ^       P 
+
+      J       P       J       P       J       P    [J(]       E 
+
+      y       i       h    [qg]       w       e       t       Y 
+
+      h       p       s    [^P]       q       E       t       y 
+
+ ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewButton("XXXTentacion - SAD!", "Autoplayf", function()
+
+   -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 20 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ {Eyo}  {Eyo} h D H h g g D h D g D g D h D g D g h D  H h g g D h D g D g D h D g D g Z z l h h g h g h g  h  Z z l h g h g h g h g h D Z z l h g h g h g h g h D D J g g D D J g g D Z z l h h g h g h g h Z z l h g h g h g h g h D Z z l h g h g h g h g h D D J g g D D J g g d g h h D H h g D g h h D H h g D s h h h H h g D s h h J H h g D h h g h h g h h h H h G D h h g h h g h h h H h g D  Z z l h h g h g h g  h  Z z l h g h g h g h g h D Z z l h g h g h g h g h D D J g g D D J g g D Z z l h h g h g h g h Z z l h g h g h g h g h D Z z l h g h g h g h g h D D J g g D D J g g D ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewButton("Death Bed", "Autoplayf", function()   
+
+  -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 00 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[  [8f] --- [0h] - h - f - w - f - 
+
+j - f -- [6f] --- [8h] - h - d - 0 -- s - h - f - 
+
+d - d - [4d] - s - s - [6s] - d - f - 8 -- s - h - 
+
+f - d - d - [5d] -- h - 7 - h - f - 9 --- d - s -- 
+
+[8f] - 0 - [wh] - [th] - f -- f - j - f -- [6f] - 
+
+8 - [0h] - [eh] - d --- s - h - f - d - d - [4d] - 
+
+s - [6s] - [8s] - d - q - f --- s - h - f - d - d - 
+
+[5d] - 7 - h - 9 - h - w - f --- d - s -- [80wf] - 
+
+[80w] - [80wh] - [80w] - f - [80w] - [80wf] - j - 
+
+[80w] - f - [80w] - [80ef] - [80e] - [80eh] - [80e] - 
+
+d - [80e] - [80e] - s - [80eh] - f - [80ed] - d - 
+
+[8qed] - s - [8qes] - [8qes] - d - [8qe] - f - [8qe] - 
+
+[8qe] - s - [8qeh] - f - [8qed] - d - [79wd] - [79w] - 
+
+h - [79w] - h - [79w] - f - [79w] - [79w] - [79wd] - 
+
+s - [79w] - [8f] - [0wt] - [8h] - [0wth] - f - 8 - 
+
+[0wtf] - j - 8 - f - [0wt] - [6f] - [0et] - [6h] - 
+
+[0et] - d - 6 - [0et] - s - [6h] - [0etd] - d - [4d] - 
+
+s - [8qes] - [4s] - d - [8qe] - f - 4 - [8qe] - s - 
+
+[4h] - f - [8qed] - [5d] - [9wr] - h - 5 - h - [9wr] - 
+
+f - 5 - [9wr] - [5d] - s - [9wr] - f --- h - h - f -- 
+
+f - j - f -- [8f] - 0 - w - t - [uh] - o - s - [of] - 
+
+u - t - w - [0j] - [8f] -- [6f] - 8 - 0 - e - [th] - 
+
+u - [ph] - [ud] - t - e - 0 - [8s] - h - [6f] - d - 
+
+4 - [6s] - [8s] - q - [es] - [td] - i - [tf] - e - 
+
+q - 8 - [6s] - [4h] - f - d - [5d] - 7 - 9 - [wh] - 
+
+r - [yh] - o - [yf] - r - w - 9 - 7 - [5d] - s -- 
+
+[8fx] - 0 - w - t - [uhv] - o - [shv] - [ofx] - u - 
+
+t - [wfx] - [0jb] - 8 - [7fx] -- [6fx] - 8 - 0 - e - 
+
+[thv] - u - [phv] - [udz] - t - e - 0 - [8sl] - [hv] - 
+
+[6fx] - [dz] - [dz] - [4dz] - [6sl] - [8sl] - q - 
+
+[esl] - [tdz] - i - [tfx] - e - q - 8 - [6sl] - [4hv] - 
+
+[fx] - [dz] - [dz] - [5dz] - 7 - 9 - [whv] - r - [yhv] - 
+
+o - [yfx] - r - w - 9 - 7 - [5dz] - [sl] -- x --- 
+
+v - v - x -- x - b - x ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewButton("Squid Game OST - Way Back Then", "Autoplayf", function()   
+
+  -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 00 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ k       k       k       k       k       k       Z       k 
+
+      k       j       h       j       k       k       k       k 
+
+      k       k       k       k       j       h       j       h 
+
+      f       f       k       k       k       k       k       k 
+
+      Z       k       k       j       h       j       k       k 
+
+      k       k       k       k       k       k       j       h 
+
+      j       h       f       f       0       w       0       w 
+
+      0       w       0       9       0       w       0       w 
+
+      0       9       0       7    [k0]       k    [wk]    [k0] 
+
+      k    [wk]    [Z0]       k    [wk]       j    [h0]       j 
+
+   [k9]    [k0]       k    [wk]    [k0]       k    [wk]    [k0] 
+
+      j    [h9]       j    [h0]       f    [f7]    [k0]       k 
+
+   [wk]    [k0]       k    [wk]    [Z0]       k    [wk]       j 
+
+   [h0]       j    [k9]    [k0]       k    [wk]    [k0]       k 
+
+   [wk]    [k0]       j    [h9]       j    [h0]       f    [f7] 
+
+      f       G       f       G       f       G       f       G 
+
+      f       G       f       G       f       G       f       G 
+
+      f       G       f       G    [uf] ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewButton("Squid Game Theme", "Autoplayf", function()   
+
+  -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 00 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ a       a       a       a       a       a       D       a 
+
+      a       p       o       p       a       a       a       a 
+
+      a       a       a       a       p       o       p       o 
+
+      u       u       a       a       a       a       a       a 
+
+      D       a       a       p       o       p       a       a 
+
+      a       a       a       a       a       a       p       o 
+
+      p       o       u       u       0       w       0       w 
+
+      0       w       0       9    [a0]       a    [wa]    [a0] 
+
+      a    [wa]    [D0]       a    [wa]       p    [o0]       p 
+
+   [a9]    [a0]       a    [wa]    [a0]       a    [wa]    [a0] 
+
+      p    [o9]       p    [o0]       u    [u7]    [a0]       a 
+
+   [wa]    [a0]       a    [wa]    [D0]       a    [wa]       p 
+
+   [o0]       p    [a9]    [a0]       a    [wa]    [a0]       a 
+
+   [wa]    [a0]       p    [o9]       p    [o0]       u    [u7] 
+
+      f       G       f       G       f       G       f       G 
+
+      f       G       f       G       f       G       f       G 
+
+      f       G       f       G       f       G       f       G 
+
+      f       G       f       G       f       G       f       G 
+
+  [fa0]       s       S       D       f       7       7    [h0] 
+
+      k       x       7       7    [a0]       s       S       D 
+
+      f       7       7       0    [xf]    [zd]    [ka]    [pj] 
+
+  [oh7]    [IG]    [f0]    [f7]       G    [wh]    [G5]       h 
+
+   [j9]       h       j       h    [G6]       f    [d5]       7 
+
+   [j6]       0       h    [eG]    [f6]    [G7]    [h8]       G 
+
+   [he]       j    [wk]       9   [uf0]   [uf7]    [IG]   [woh] 
+
+  [IG5]    [oh]   [pj9]    [oh]   [IG6]    [uf]   [yd5]       9 
+
+  [pj6]       *    [oh]   [IG0]   [uf6]    [IG]   [oh8]    [IG] 
+
+  [oh8]    [pj]   [ka7]       Q       7       $       7       Q 
+
+      7       k       k       k       k       k       k       Z 
+
+      k       k       j       h       j       k       k       k 
+
+      k       k       k       k       k       j       h       j 
+
+      h       f       f    [ra]    [ra]    [ra]    [ra]    [ra] 
+
+   [ra]    [yD]    [ra]    [ra]    [pe]    [wo]    [pe]    [ra] 
+
+   [ra]    [ra]    [ra]    [ra]    [ra]    [ra]    [ra]    [pe] 
+
+   [wo]    [pe]    [wo]    [u0]    [u0]       6       6       6 
+
+      6 
+
+ ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewButton("Rush C", "Autoplayf", function()   
+
+  -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 00 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ s s s s s s s s s s s st stl stl8 stl8m stlm81 stlm81, q [Wt] 8 [Wt] [18] [29] [30] [4q], [Wt] 8 [Wt] [4s] s [Wts] s [8s] s [Wts] s [4s] s [Wts] s [8s] s [Wts] s [4s] [[Wt] a [8s] [Wtg] [4H] [Wt] 8 [Wtl] [0L] [Et] l [8J] [EtL] [4l] [Wt] 8 [WtH] [*J] [ET] H [h9] [gwr] [0wtf] [18s] [29] [30] [4qs], s [Wts] s [8s] s [Wts] s [4s] s [Wts] s [8s] s [Wts] s [4s] [Wt] g [8H] [WtJ] [4l] [Wt] [8c] [Wt] 0 [*wL] 4 [8Wl] [5J] [^0h] [%H] [8qJ] [8tl] [^E] [%Wx] [5w] [4qc] [18s] [29] [30] [4qs], s [Wts] s [8s] s [Wts] s [4s] s [Wts] s [8s] s [Wts] s [4s] [[Wt] a [8s] [Wtg] [4H] [Wt] 8 [Wtl] [0L] [Et] l [8J] [EtL] [4l] [Wt] 8 [WtH] [*J] [ET] H [h9] [gwr] [0wtf] [18s] [29] [30] [4qs], s [Wts] s [8s] s [Wts] s [4s] s [Wts] s [8s] s [Wts] s [4s] [Wt] g [8H] [WtJ] [4l] [Wt] [8c] [Wt] 0 [*wL] 4 [8Wl] [5J] [^0h] [%H] [8qJ] [8tl] [^E] [%Wx] [5w] [4qc], [29] [30] [4q] [$Q], g [Wt] 4 [*qS] [^g] [*q] 4 [S*q] [%g] [8qs] [4O] [8qs] [%g] [8q] 4 [8q] [f5] [Eu] 8 [Eus] [f5] [Eu] 8 [Eus] [%Wg] [4qh] [%WH] [8tJ] [qil] [4q] [^L] [*q] 4 [*qJ] [^L] [*q] 4 [*qJ] [%l] [8q] 4 [8qH] [%l] [8q] 4 [8qH] [0J] [*wL] [4l] [8WH] [5h] [80J] [%H] [4qg] [8tf] [^Es] [%Wd] [5wf] [4qg], [18ts] [29] [30] [4qts], [st] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4ts] [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4ts] [[Wt] [ra] [8ts] [Wtig] [4OH] [Wt] 8 [Wtsl] [0SL] [Et] [ls] [8PJ] [EtSL] [4sl] [Wt] 8 [WtOH] [*PJ] [ET] [OH] [oh9] [giwr] [0wtuf] [18ts] [29] [30] [4qts], [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4ts] [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4ts] [Wt] [ig] [8OH] [WtPJ] [4sl] [Wt] [8gc] [Wt] 0 [*wigSL] [4q] [8WYDsl] [5wTSPJ] [^0ufoh] [%giOH] [8qohPJ] [8tfusl] [^E] [%Wohfx] [5w] [4qOHgc], [4q] [Wt] 8 [Wt] [4q] [Wt] 8 [Wt] [4q] [WtiOs] 8 [WtiOs] [4q] [WtiOs] 8 [WtiOs] [4qi] [WtiOsgHl] [8t] [WtiOsgHl] [4qi] [WtiOsgHl] [8t] [WtiOsgHl], [4qst] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4qts] [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4qts] [[Wt] [ra] [8ts] [Wtig] [4qOH] [Wt] 8 [Wtsl] [03SL] [Et] [ls] [8PJ] [EtSL] [4qsl] [Wt] 8 [WtOH] [*!PJ] [ET] [OH] [oh9] [giwr] [30wtuf] [18ts] [29] [30] [4qts], [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4qts] [ts] [Wts] [ts] [8ts] [ts] [Wts] [ts] [4qts] [Wt] [ig] [8OH] [WtPJ] [4qsl] [Wt] [8gc] [Wt] [30] [*wigSL] [4q] [8WYDsl] [5wTSPJ] [^0ufoh] [%giOH] [8qohPJ] [8tfusl] [^E] [%Wohfx] [5w] [4qOHgc], [29] [30] [4q] [$Q], [gcPJ] [ETi] [ETigiSL] [PgJc] [ETigiSL] [^E] [ETiPgJc] [OgHc] [gWtiisl] [WtitOsH] [OsHc] [Wti] [4q] [Wti] [8txhfo] [tuo] [tuosfl] [ofhx] [tuo] [8t] [tuosfl] [4qOgHc] [4qshlv] [%WgcHV] [8thvBJ] [mlVH] [mlVH] [mlVH] [mlVH], [^WOLS] [*q] [4qi] [*qPJ] [^WOSL] [*q] [4qi] [*qPJ] [%WOsl] [8q] [4qi] [8qOH] [%sl] [8q] [4qi] [8qOH] [30uPJ] [*wSL] [4qisl] [8WOH] [5woh] [80PJ] [%WOH] [4qig] [8stuf] [^Ets] [%Wz92yd] [5woufx03] [4qigc], [18] [29] [30] [4qiOs] [iOs] [4%8qWtiOs] [iOs] [8iOs] [iOs] [4%8qWtiOs] [iOs] [4qiOs] [iOs] [4%8qWtiOs] [iOs] [8iOs] [iOs] [4%8qWtiOs] [iOs] [4qiOs] [4%8qWtiOs] [oa] [8Os] [4%8qWtiOsg] [4qsgH] [4%8qWtiOs] 8 [4%8qWtiOsgHl] [30gJL] [3580wtuos] [Dgl] [8DgJ] [3580wtuosLJg] [4qlHg] [4%8qWtiOs] 8 [4%8qWtiOsgH] [!*SgJ] [4^*qETiPS] [sDH] [29PSh] [457qwrioaPSg] [3058wtuosPsf] [18tsl] [29ydz] [30ufx] [4qgWtiOs] [qWtiOs] [4%8qWtiOs] [qWtiOs] [8qWtiOs] [qWtiOs] [4%8qWtiOs] [qWtiOs] [4qWtiOs] [qWtiOs] [4%8qWtiOs] [qWtiOs] [8qWtiOs] [qWtiOs] [4%8qWtiOs] [qWtiOs] [4qWtiOs] [4%8qWtiOs] [8WtiOsg] [4%8qWtiOsuPfhJ] [4qiOsgHl] [4%8qWtiOs] [8HOsglc] [4%8qWtiOs] [30] [4^QqETiPSgJL] [4q] [4%8qWtiOsDglZ] [5wTiPSgJ] [3580wtuosPShJ] [%WtiOsgH] [4%8qWtiOsTiPSg] [13580qtuosfh] [osfhlx] [180wtuosfhl] ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
+
+    Library:ToggleUI()
+
+end)
+
+local Tab = Window:NewTab("Speed")
+
+local Section = Tab:NewSection("Speed")
+
+Section:NewSlider("Speed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+end)
+
+local Tab = Window:NewTab("AutoPlay Piano MAKER")
+
+local Section = Tab:NewSection("Click It If you want to make your own Auto Play")
+
+Section:NewButton("Patched!", "Auto", function()  
+
+    
+
+end)
+
+local Tab = Window:NewTab("Stop Piano")
+
+local Section = Tab:NewSection("Stop Piano")
+
+Section:NewButton("Stop piano", "Auto", function()  
+
+ -- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+
+-- CONFIG:
+
+shared.ftime = 2*60 + 00 -- time in seconds for the song to finish (extended by |)
+
+shared.delay = nil -- delay overides the ftime
+
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ e ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xzekep/Xzekep/main/Auto%20piano%20test"))()
+
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
+
+    Library:ToggleUI()
+
+end)
+
+local Tab = Window:NewTab("Speed")
+
+local Section = Tab:NewSection("Speed")
+
+Section:NewSlider("Speed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+end)
